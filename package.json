@@ -1,0 +1,15 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "NYPL Public Domain Tweet Bot",
+  "main": "getImage.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Matthew Zhang",
+  "license": "ISC",
+  "dependencies": {
+    "public-domain-nypl-captures": "^1.1.0",
+    "twit": "^2.2.9"
+  }
+}
