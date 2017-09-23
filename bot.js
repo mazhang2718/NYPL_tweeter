@@ -2,8 +2,14 @@ var fs = require('fs'),
     path = require('path'),
     Twit = require('twit'),
     http = require('http'),
-    nyplCaptures = require('public-domain-nypl-captures'),
-    config = require(path.join(__dirname, 'config.js'));
+    nyplCaptures = require('public-domain-nypl-captures');
+
+var config = {
+  consumer_key: process.env.consumer_key,
+  consumer_secret: process.env.consumer_secret,
+  access_token: process.env.access_token,
+  access_token_secret: process.env.access_token_secret
+}
 
 var request = require('request').defaults({ encoding: null });
 var T = new Twit(config);
