@@ -39,7 +39,7 @@ function execute(){
       else {
         imageURL = capture["preferredImageURL"];
         title = capture["title"];
-        title.slice(0,140);
+        title.slice(0,139);
       }
     }
 
